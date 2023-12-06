@@ -23,7 +23,7 @@ public class gameController : MonoBehaviour
     public float distanciaDestruir;
 
     public float tamanhoPonte;
-    public GameObject pontePrefab;
+    public GameObject [] pontePrefab;
 
     [Header("Config. Barril")]
     public float posYTop;
@@ -45,14 +45,14 @@ public class gameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _playerController = FindObjectOfType(typeof(playerController)) as playerController;
-        StartCoroutine("spawnBarril");
+        //_playerController = FindObjectOfType(typeof(playerController)) as playerController;
+        //StartCoroutine("spawnBarril");
     }
 
     // Update is called once per frame
     void LateUpdate()
     {
-        posXPLayer = _playerController.transform.position.x;
+        //posXPLayer = _playerController.transform.position.x;
     }
 
     IEnumerator spawnBarril(){

@@ -26,7 +26,16 @@ public class controlePonte : MonoBehaviour
             if(transform.position.x <= 0)
             {
                 instanciado = true;
-                GameObject temp = Instantiate(_GameController.pontePrefab);
+
+                int idPrefab = 0;
+                int rand = Random.Range(0,100);
+                if(rand < 50){
+                    idPrefab = 0;
+                }else {
+                    idPrefab = 1;
+                }
+
+                GameObject temp = Instantiate(_GameController.pontePrefab[0]);
                 float posX = transform.position.x + _GameController.tamanhoPonte;
                 float posY = transform.position.y;
                 temp.transform.position = new Vector3(posX, posY, 0);
