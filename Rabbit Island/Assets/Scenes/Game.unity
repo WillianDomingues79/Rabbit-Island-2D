@@ -298,6 +298,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CenaB
       objectReference: {fileID: 0}
+    - target: {fileID: 6137000232584199630, guid: f0eb5556e359c144e8c4551670e9dce9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -524,7 +528,7 @@ Transform:
   m_GameObject: {fileID: 1118264643}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -7.5, y: -4.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -543,7 +547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93efd1c6c0acc1c419e6f861d71c5ff5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forcaPulo: 300
+  forcaPulo: 350
   groundCheck: {fileID: 140689631}
 --- !u!95 &1118264650
 Animator:
@@ -631,7 +635,7 @@ MonoBehaviour:
   limiteMinY: 0
   limiteMaxX: 0
   limiteMinX: 0
-  velocidadeObjeto: -4
+  velocidadeObjeto: -3
   distanciaDestruir: -20
   tamanhoPonte: 20
   pontePrefab:
